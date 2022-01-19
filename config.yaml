@@ -1,0 +1,67 @@
+# Site setup
+
+baseURL            : "https://www.furkan.space/"
+languageCode       : "en-us"
+title              : "Furkan Çaycı, Ph.D."
+publishDir         : "public"
+ignoreFiles        : ["\\.Rmd$", "_files$", "_cache$"]
+disableKinds       : ["RSS"]
+summaryLength      : 20
+
+permalinks:
+  /                : /:year/:month/:filename/
+
+taxonomies:
+  tag              : "tags"
+
+# Code highlight
+
+PygmentsCodeFences : true
+PygmentsStyle      : "tango"
+PygmentOptions     : "linenos=inline"
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: true
+    lineNumbersInTable: true
+    noClasses: true
+    style: github
+    tabWidth: 4
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 2
+
+# Site parameters
+params:
+  author           : "Furkan Çaycı"
+  description      : "Personal notes of Furkan Çaycı"
+  DateFormat       : "Jan 2, 2006"
+  github           : "https://github.com/fcayci"
+  twitter          : "https://twitter.com/furkanca02"
+  linkedin         : "https://www.linkedin.com/in/fcayci"
+  email            : "mailto:furkan@furkan.space"

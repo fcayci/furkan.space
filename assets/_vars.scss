@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+$padding-1: 1px;
+$padding-4: 0.25rem;
+$padding-8: 0.5rem;
+$padding-16: 1rem;
+
+$font-size-base: 16px;
+$font-size-12: 0.75rem;
+$font-size-14: 0.875rem;
+$font-size-16: 1rem;
+$font-size-18: 1.125rem;
+$font-size-20: 1.25rem;
+$font-size-22: 1.375rem;
+$font-size-24: 1.5rem;
+
+$font-size-28: 1.75rem;
+$font-size-32: 2rem;
+$font-size-36: 2.25rem;
+
+$color-body-dark: #373737;
+$color-body-light: #fefefe;
+$color-link-dark: #0366d6;
+$color-link-light: #84c6ff;
+$color-quote-dark: #373737;
+$color-quote-light: #ffeaea;
+$color-code-dark:  #373737;
+$color-code-light: #f6f8fa;
+
+// easy swapping
+$color-body-back: $color-body-light;
+$color-body-fore: $color-body-dark;
+$color-code-back: $color-code-light;
+$color-sel-back: $color-link-light;
+$color-link-back: $color-link-dark;
+$color-link-fore: $color-link-light;
+$color-quote-back: $color-quote-light;
+
+$body-min-width: 500px;
+$body-max-width: 960px;
+
+$menu-width: 12*$font-size-base;
+$toc-width: 240px;
+
+$sm-breakpoint: $body-min-width;

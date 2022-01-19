@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <article>
+    <a href="{{.Site.BaseURL}}">Home</a>
+    <h1>{{ .Title }}</h1>
+    <h5>{{ .Date.Format "January 2, 2006" }}</h5>
+    <ul class="tags">
+      {{ range (.GetTerms "tags") }}
+        <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{ end }}
+    </ul>
+    {{- .Content -}}
+  </article>
+{{ end }}

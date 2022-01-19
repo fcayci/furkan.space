@@ -1,0 +1,11 @@
+<footer>
+
+  This page was published on {{ .Date.Format "Jan 2, 2006" }}
+  {{ if ne .Date .Lastmod }}, and updated on
+  {{ .Lastmod.Format "Jan 2, 2006" }} {{ end }}. You can find some of my work
+  on <a href="{{.Site.Params.Github }}">Github</a>. You can also follow me on
+  <a href="{{ .Site.Params.Twitter }}">Twitter</a>, though I mainly use it as
+  a news source. If you would like to contact me, please reach me at my
+  <a href="{{ .Site.Params.Email }}">mail address</a>. Cheers!
+
+</footer>

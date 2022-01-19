@@ -1,0 +1,14 @@
+{{ define "main" }}
+  <article>
+    <h1>List of notes related to {{lower .Title}}</h1>
+    <ul>
+    {{ range sort .Pages }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ title .Title }}</a>
+        - {{ .Date.Format "Jan 2, 2006" }}
+      </li>
+      {{- .Summary -}}
+    {{ end }}
+    </ul>
+  </article>
+{{ end }}
